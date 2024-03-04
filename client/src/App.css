@@ -1,0 +1,237 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: cursive;
+}
+
+.page {
+  display: grid;
+  grid-template-rows: 50px 1fr 30px;
+  min-height: 100vh;
+}
+
+header,
+footer {
+  background-color: black;
+  color: white;
+  display: grid;
+  place-content: center;
+  position: fixed;
+}
+
+.tasksList {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+  padding-top: 45px;
+  /* margin-top: 50px; */
+}
+
+.task {
+  padding: 10px;
+  border: 5px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgb(66, 64, 64);
+  font-family: cursive;
+  min-height: 12vh;
+  
+}
+
+.time {
+  font-size: 0.7rem;
+  margin-bottom: 20px;
+}
+header{
+margin-top: 0;
+  padding-top: 0;
+  top: 0;
+  right: 0;
+  min-width: 100vw;
+  max-height: 7vh;
+  z-index: 2;
+}
+
+.footer {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  min-width: 100vw;
+}
+
+.nav {
+  text-align: center;
+  display: flex;
+  font-size: 1.5rem;
+  gap: 10px;
+}
+
+.nav a {
+  padding: 1.5vw;
+  color: white;
+}
+
+.nav a.active {
+  background-color: white;
+  color: black;
+  max-height:7vh;
+}
+
+.deleteBtn {
+  background-color: rgb(199, 197, 197);
+  color: black;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.deleteBtn:hover {
+  background-color: black;
+  color: white;
+}
+
+.add {
+  background-color: rgb(53, 52, 52);
+  font-size: smaller;
+  cursor: pointer;
+  max-width: 3vw;
+  border-radius: 50%;
+  border: none;
+  color: rgb(179, 177, 177);
+  min-width: 30px;
+  min-height: 30px;
+}
+
+.bigInput {
+  min-height: 70vh;
+}
+
+.home {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20vh;
+}
+
+
+
+.photo {
+  /* width: 30vw;
+  height: 30vh; */
+  padding: 2px;
+  margin: 5px;
+  position: relative;
+}
+
+.img {
+ max-width: 30vw;
+ min-width: 30vw;
+ min-height: 45vh;
+ max-height: 45vh;
+
+}
+
+.imgButtom {
+  position: absolute;
+  top: 37.5vh;
+  left: 0.2vw;
+  width: 30vw;
+  height: 8vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.imgButtom {
+  margin-right: 0px;
+  font-size: larger;
+}
+.photos{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 100vw;
+  
+}
+.deleteBtnonImg{
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 2rem;
+  border: none;
+  cursor: pointer;
+}
+.deleteBtnonImg:hover{
+  color:#807f7f;
+}
+
+.updateForm{
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  z-index: 2;
+  padding: 30px;
+  margin: 30px;
+  border: 5px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 0px rgb(66, 64, 64);
+  min-height: 32vh;
+  min-width: 30vw;
+  right: 30vw;
+  text-align: center;
+  top:20vh;
+  justify-content: space-between;
+background-color: #fff;
+
+}
+.addPage{
+  background-color: #807f7f;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid black;
+  background-color: transparent;
+  outline: none;
+  font-family: cursive;
+  margin-top: 5vh;
+}
+.submit{
+  border-radius: 5px;
+  border: none;
+  margin-top: 25px;
+  background-color: #b0adad;
+  min-height: 25px;
+}
+.searchBox{
+  /* background-color: rgb(207, 209, 209); */
+  margin-top: 0;
+}
+.top{
+  display: flex;
+}
+.empty{
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+  background-color: #b0adad;
+  min-height: 100vh;
+  padding-top: 35vh;
+  text-align: center;
+}
+.cancel{
+  color: rgb(144, 141, 141);
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-left: 60px;
+}
